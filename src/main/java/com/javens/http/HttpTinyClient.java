@@ -15,8 +15,10 @@
  * limitations under the License.
  */
 
-package com.javens.util;
+package com.javens.http;
 
+
+import com.javens.util.IOTinyUtils;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
