@@ -1,5 +1,6 @@
 package com.javens.util;
 
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 
 import java.util.ArrayList;
@@ -64,4 +65,20 @@ public class ListUtils {
         return (Integer.valueOf(pageNo) - 1) * 10;
     }
 
+    /**
+     * 逗号分割字符串
+     * @param list
+     * @return
+     */
+    public static String list2String(List list){
+        return StringUtils.join(list,",");
+    }
+
+    public static <T> List<T> array2List(T[] t){
+        return Arrays.asList(t);
+    }
+
+    public static  Object[] list2Array(List<Object> list){
+        return list.toArray(new Object[list.size()]);
+    }
 }
