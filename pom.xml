@@ -97,39 +97,22 @@
 
     </dependencies>
 
-    <!-- 发包配置,不配可下载,不可发包,只在parent配置即可 -->
     <distributionManagement>
         <repository>
-            <id>release</id>
-            <name>release</name>
-            <url>http://maven.51rz.com/repository/maven-releases/</url>
+            <id>dinglc</id>
+            <name>dinglc</name>
+            <url>http://maven.office.dinglc.com:8090/nexus/content/repositories/dinglc/</url>
+            <uniqueVersion>true</uniqueVersion>
         </repository>
         <snapshotRepository>
-            <id>snapshots</id>
-            <name>snapshots</name>
-            <url>http://maven.51rz.com/repository/maven-snapshots/</url>
+            <id>dinglc-snapshot</id>
+            <name>dinglc-snapshot</name>
+            <url>http://maven.office.dinglc.com:8090/nexus/content/repositories/dinglc-snapshot/</url>
         </snapshotRepository>
     </distributionManagement>
 
 
-    <repositories>
-        <repository>
-            <id>nexus</id>
-            <name>nexus</name>
-            <url>http://maven.51rz.com/repository/maven-public/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>thirdparty</id>
-            <name>thirdparty</name>
-            <url>http://maven.51rz.com/repository/thirdparty/</url>
-        </repository>
-    </repositories>
+
 
 
     <build>
